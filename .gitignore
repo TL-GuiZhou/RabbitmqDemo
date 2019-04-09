@@ -1,0 +1,8 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/NetCore.Rabbitmq/NetCore.Rabbitmq.ConsoleApp/obj
+/NetCore.Rabbitmq/NetCore.Rabbitmq.ConsoleApp/bin/Debug/netcoreapp2.2
+/NetCore.Rabbitmq/.vs/NetCore.Rabbitmq/v15
+/.vs
