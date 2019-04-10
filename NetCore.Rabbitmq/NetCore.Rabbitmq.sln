@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Rabbitmq.ConsoleApp", "NetCore.Rabbitmq.ConsoleApp\NetCore.Rabbitmq.ConsoleApp.csproj", "{F12D6139-511C-479E-9912-8B1714FBB7FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Rabbitmq.Receive", "Net.Rabbitmq.Receive\Net.Rabbitmq.Receive.csproj", "{AAEB060E-F16A-48B6-8814-4DA41283FCB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Rabbitmq.Publish", "Net.Rabbitmq.Publish\Net.Rabbitmq.Publish.csproj", "{243CEE4E-60BB-4E4D-819E-058120D3BD8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F12D6139-511C-479E-9912-8B1714FBB7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F12D6139-511C-479E-9912-8B1714FBB7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F12D6139-511C-479E-9912-8B1714FBB7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAEB060E-F16A-48B6-8814-4DA41283FCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEB060E-F16A-48B6-8814-4DA41283FCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEB060E-F16A-48B6-8814-4DA41283FCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEB060E-F16A-48B6-8814-4DA41283FCB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{243CEE4E-60BB-4E4D-819E-058120D3BD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243CEE4E-60BB-4E4D-819E-058120D3BD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243CEE4E-60BB-4E4D-819E-058120D3BD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243CEE4E-60BB-4E4D-819E-058120D3BD8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

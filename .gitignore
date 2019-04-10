@@ -6,3 +6,8 @@
 /NetCore.Rabbitmq/NetCore.Rabbitmq.ConsoleApp/bin/Debug/netcoreapp2.2
 /NetCore.Rabbitmq/.vs/NetCore.Rabbitmq/v15
 /.vs
+/NetCore.Rabbitmq/packages
+/NetCore.Rabbitmq/Net.Rabbitmq.Receive/obj/Debug
+/NetCore.Rabbitmq/Net.Rabbitmq.Receive/bin/Debug
+/NetCore.Rabbitmq/Net.Rabbitmq.Publish/obj/Debug
+/NetCore.Rabbitmq/Net.Rabbitmq.Publish/bin/Debug

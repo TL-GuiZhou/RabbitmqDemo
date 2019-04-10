@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
 
-namespace NetCore.Rabbitmq.ConsoleApp
+namespace Net.Rabbitmq.Publish
 {
     class Program
     {
@@ -30,16 +30,15 @@ namespace NetCore.Rabbitmq.ConsoleApp
 
         public static void Publish(IModel model)
         {
-            model.QueueDeclare(MqKey, false, false, false, null);
+            model.QueueDeclare();
+            model.ExchangeDeclare(exchange: "exchangename", type: "fanout");
             while (true)
             {
-                var message = $"Hello World{DateTime.Now:HH:mm:ss tt zz}";
-                model.BasicPublish("", MqKey, null, Encoding.UTF8.GetBytes(message));
-                Console.WriteLine($" set {message}");
-                Console.ReadLine();
+                var info=Console.ReadLine();
+                var message = $"{DateTime.Now:HH:mm:ss tt zz} with {info}";
+                model.BasicPublish("exchangename", "", null, Encoding.UTF8.GetBytes(message));
+                Console.WriteLine($"Publish: {message}");
             }
         }
-     
-
     }
 }
